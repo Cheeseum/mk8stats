@@ -10,11 +10,9 @@
 <body ng-app="mk8statsApp">
     <div ng-controller="KartsCtrl" id="karts">
         <div ng-repeat="kart in karts" class="kart" id="kart-{{kart.id}}" ng-controller="KartCtrl">
-            <p> I'm a kart! </p>
-            
             <div class="kart-options">
-                <select ng-model="kart.weight" name="characters">
-                        <option ng-repeat="(name, d) in data.characters" value={{d.weight}}>{{name}}</option>
+                <select name="characters" ng-model="kart.weight"
+                        ng-options="d.weight as name group by d.weight|uppercase for (name, d) in data.characters">
                 </select>
                 <select ng-model="kart.kart" name="karts">
                         <option ng-repeat="(name, d) in data.karts" value={{name}}>{{name}}</option>
@@ -29,16 +27,18 @@
 
             <div class="kart-stats">
                 <hr>
-                <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.speed[$index]}}></stat-meter>
+                <span class="small">Speed</span>
+                <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.speed[$index]}} max=6></stat-meter>
                 
                 <hr>
-                <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.handling[$index]}}></stat-meter>
+                <span class="small">Handling</span>
+                <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.handling[$index]}} max=6></stat-meter>
                 
                 <hr>
-                <stat-meter name="Acceleration" value={{stats.accel}}></stat-meter>
-                <stat-meter name="Weight" value={{stats.weight}}></stat-meter>
-                <stat-meter name="Traction" value={{stats.traction}}></stat-meter>
-                <stat-meter name="Mini-Turbo" value={{stats.turbo}}></stat-meter>
+                <stat-meter name="Acceleration" value={{stats.accel}} max=6></stat-meter>
+                <stat-meter name="Weight" value={{stats.weight}} max=6></stat-meter>
+                <stat-meter name="Traction" value={{stats.traction}} max=6></stat-meter>
+                <stat-meter name="Mini-Turbo" value={{stats.turbo}} max=6></stat-meter>
                 
                 <hr>
             </div>

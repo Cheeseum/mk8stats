@@ -28,7 +28,6 @@ var gameData = {
 }
 
 var mk8statsApp = angular.module('mk8statsApp', []);
-var karts = [{id: 0}];
 var statKeys = ['accel', 'weight', 'traction', 'turbo'];
 
 function mergeStats () {
@@ -57,13 +56,14 @@ function mergeStats () {
 }
 
 mk8statsApp.controller('KartsCtrl', function ($scope) {
-    $scope.karts = karts;
+    $scope.karts = [];
     
     $scope.addKart = function () {
-        kart = {};
-        console.log("kart");
+        kart = {weight: 'medium', kart: 'Standard Kart', wheels: 'Standard', glider: 'Super Glider'};
         $scope.karts.push(kart);
     };
+
+    $scope.addKart();
 });
 
 mk8statsApp.controller('KartCtrl', function ($scope) {
@@ -83,7 +83,21 @@ mk8statsApp.controller('KartCtrl', function ($scope) {
         restrict: 'E',
         scope: {
           name: '@',
-          value: '@'
+          value: '@',
+          max: '@',
+        },
+        link: function (scope, elem, attrs) {
+            scope.level = function () {
+                var l = scope.value / scope.max;
+
+                if (l < 0.4) {
+                    return 'low';
+                } else if (l < 0.65) {
+                    return 'mid';
+                } else {
+                    return 'high';
+                }
+            }
         },
         templateUrl: 'partials/stat-meter.html'
     };

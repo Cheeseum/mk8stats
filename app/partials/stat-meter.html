@@ -1,3 +1,4 @@
 <label>{{name}}</label>
-<meter max=6 value={{value}}></meter>
-<span>{{value}}</span>
+<div class="meter level-{{level()}}">
+    <span style="width: {{value / max * 100}}%">{{value}}</span>
+</div>

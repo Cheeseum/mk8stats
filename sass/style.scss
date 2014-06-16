@@ -1,12 +1,14 @@
 $kart-width: 25em;
 $meter-width: $kart-width * 0.5;
 
-$font-family: monospace;
+$font-family: sans monospace;
+$font-color: black;
 $font-size: 10pt;
 
 $padding: 20px;
 
-$primary-color: #ccddff;
+$primary-color: #6495ed;
+$secondary-color: #87cefa;
 
 @mixin box-sizing($type) {
     -webkit-box-sizing: $type;
@@ -23,6 +25,19 @@ html, body, body > * {
     height: 100%;
     margin: 0 auto;
     padding: 0 auto;
+
+    color: $font-color;
+    font-family: $font-family;
+}
+
+meter {
+    background: none;
+    background-color: $secondary-color;
+}
+
+hr {
+    border: dashed;
+    color: black;
 }
 
 #karts {
@@ -30,19 +45,19 @@ html, body, body > * {
     overflow-x: auto;
     overflow-y: hidden;
     
+    max-height: 40em;
+
     white-space: nowrap;
 }
 
 #karts > * {
     vertical-align: middle;
     padding: $padding;
-    white-space: normal;
+    margin-right: ($padding / 2);
 }
 
 .kart{
-    height: 100%;
-
-    background: $primary-color;    
+    background: white;
 
     display: inline-block;
     width: $kart-width;
@@ -57,9 +72,17 @@ html, body, body > * {
     width: 100%;
 }
 
-button.big-button {
+
+.small {
+    color: grey;
+    font-size: 0.5em;
+}
+
+.big-button {
     display: inline-block;
     
+    color: white;
+
     width: 2em;
     height: 100%;
 
@@ -69,16 +92,55 @@ button.big-button {
     font-size: $font-size * 5;
 }
 
+.big-button:hover {
+    background: darken($primary-color, 10);
+}
+
+.big-button:active {
+    background: darken($primary-color, 20);
+}
+
+
 stat-meter {
     display: block;
 }
 
 stat-meter > label {
-    display: inline-block;
+    float: left;
     text-align: left;
-    width: $meter-width * 0.5;
+    width: 40%;
 }
 
-stat-meter > meter {
-    width: $meter-width;
+div.meter {
+    overflow: hidden;
+    
+    background: #bbb;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 3px;
+    box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+div.meter > meter {
+    height: 1.5em;
+    width: 100%;
+}
+
+div.meter > span {
+    height: inherit; 
+    //background-color: $primary-color;
+    background-size: 100% 100%;
+    padding: 1px;
+    display: block;
+}
+
+.level-low > span {
+    background-color: desaturate($primary-color, 70%);
+}
+.level-mid > span {
+    background-color: desaturate($primary-color, 40%);
+}
+.level-high > span {
+    background-color: $primary-color;
 }
