@@ -1,14 +1,17 @@
 $kart-width: 25em;
 $meter-width: $kart-width * 0.5;
 
-$font-family: sans monospace;
+$font-family: "Lucida Sans", sans-serif;
 $font-color: black;
 $font-size: 10pt;
 
 $padding: 20px;
 
 $primary-color: #6495ed;
-$secondary-color: #87cefa;
+$secondary-color: #e4f8ff;
+$fill-color: #f5f5f5;
+
+$karts-width: 80%;
 
 @mixin box-sizing($type) {
     -webkit-box-sizing: $type;
@@ -16,11 +19,14 @@ $secondary-color: #87cefa;
     box-sizing: $type;
 }
 
+// element-level
 * {
     @include box-sizing(border-box);
 }
 
 html, body, body > * {
+    background: $fill-color;
+
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -28,11 +34,10 @@ html, body, body > * {
 
     color: $font-color;
     font-family: $font-family;
-}
-
-meter {
-    background: none;
-    background-color: $secondary-color;
+    
+    max-height: 40em;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 hr {
@@ -40,27 +45,28 @@ hr {
     color: black;
 }
 
+// layout
 #karts {
+    display: inline-block;
+
     font-size: $font-size;
     overflow-x: auto;
     overflow-y: hidden;
     
+    max-width: $karts-width;
     max-height: 40em;
 
     white-space: nowrap;
-}
-
-#karts > * {
     vertical-align: middle;
+
     padding: $padding;
-    margin-right: ($padding / 2);
 }
 
 .kart{
-    background: white;
-
     display: inline-block;
     width: $kart-width;
+    
+    margin-right: ($padding / 2);
 }
 
 .kart-options {
@@ -72,7 +78,11 @@ hr {
     width: 100%;
 }
 
+#add-kart {
+    width: 99 - $karts-width; // 99% avoids sub-pixel issues
+}
 
+// reusable classes
 .small {
     color: grey;
     font-size: 0.5em;
@@ -83,9 +93,11 @@ hr {
     
     color: white;
 
-    width: 2em;
+    min-width: 1em;
     height: 100%;
 
+    margin: 0;
+    padding: 0;
     border: 0;
 
     background: $primary-color;
@@ -100,7 +112,7 @@ hr {
     background: darken($primary-color, 20);
 }
 
-
+// custom elements
 stat-meter {
     display: block;
 }
@@ -128,11 +140,12 @@ div.meter > meter {
 }
 
 div.meter > span {
-    height: inherit; 
-    //background-color: $primary-color;
-    background-size: 100% 100%;
-    padding: 1px;
     display: block;
+    height: inherit; 
+    padding: 1px;
+    
+    font-weight: bold;
+    text-shadow: #333 1px 1px 1px;
 }
 
 .level-low > span {

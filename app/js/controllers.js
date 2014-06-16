@@ -6,16 +6,18 @@ var gameData = {
         'medium': {'speed': [3.75, 4.25, 3.75, 4], 'accel': 2.5, 'weight': 3.75, 'handling': [3.25, 3.25, 3, 3.5], 'traction': 3.75, 'turbo': 2.25},
         'heavy': {},
         'metal': {},
-        'superheavy': {}
+        'superheavy': {'speed': [4.75, 5.25, 4.75, 5], 'accel': 2, 'weight': 4.75, 'handling': [2.25, 2.25, 2, 2.5], 'traction': 3.25, 'turbo': 1.75},
     },
 
     characters: {
-        'Luigi': { weight: 'medium' }
+        'Luigi': { weight: 'medium' },
+        'Wario': { weight: 'superheavy' }
     },
 
     karts: {
         'Standard Kart': {'speed': [0, 0, 0, 0], 'accel': 0, 'weight': 0, 'handling': [0, 0, 0, 0], 'traction': 0, 'turbo': 0},
-        'Cat Cruiser': {'speed': [0, 0, 0, 0], 'accel': 0, 'weight': 0, 'handling': [0, 0, 0, 0], 'traction': 0, 'turbo': 0}
+        'Cat Cruiser': {'speed': [0, 0, 0, 0], 'accel': 0, 'weight': 0, 'handling': [0, 0, 0, 0], 'traction': 0, 'turbo': 0},
+        'Pipe Frame': {'speed': [0, .25, .25, -.25], 'accel': .25, 'weight': -.25, 'handling': [.5, .5, .75, 0], 'traction': -.5, 'turbo': .25},
     },
 
     wheels: {
@@ -59,7 +61,11 @@ mk8statsApp.controller('KartsCtrl', function ($scope) {
     $scope.karts = [];
     
     $scope.addKart = function () {
-        kart = {weight: 'medium', kart: 'Standard Kart', wheels: 'Standard', glider: 'Super Glider'};
+        kart = {weight: 'medium', 
+                kart: gameData.karts['Standard Kart'], 
+                wheels: gameData.wheels['Standard'],
+                glider: gameData.gliders['Super Glider']};
+
         $scope.karts.push(kart);
     };
 
@@ -72,9 +78,10 @@ mk8statsApp.controller('KartCtrl', function ($scope) {
     
     $scope.$watchCollection('kart', function (newKart, oldKart) {
         var k = newKart;
+        console.log(k);
         if (k !== undefined) {
             // merge the kart parts together for stats
-            $scope.stats = mergeStats(gameData.weights[k.weight], gameData.karts[k.kart], gameData.wheels[k.wheels], gameData.gliders[k.glider]);
+            $scope.stats = mergeStats(gameData.weights[k.weight], k.kart, k.wheels, k.glider);
         }
     });
 })

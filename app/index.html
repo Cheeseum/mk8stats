@@ -8,20 +8,21 @@
 </head>
 
 <body ng-app="mk8statsApp">
-    <div ng-controller="KartsCtrl" id="karts">
+    <div ng-controller="KartsCtrl">
+        <div id="karts">
         <div ng-repeat="kart in karts" class="kart" id="kart-{{kart.id}}" ng-controller="KartCtrl">
             <div class="kart-options">
                 <select name="characters" ng-model="kart.weight"
                         ng-options="d.weight as name group by d.weight|uppercase for (name, d) in data.characters">
                 </select>
-                <select ng-model="kart.kart" name="karts">
-                        <option ng-repeat="(name, d) in data.karts" value={{name}}>{{name}}</option>
+                <select ng-model="kart.kart" name="karts"
+                        ng-options="name for (name, d) in data.karts">
                 </select>
-                <select ng-model="kart.wheels" name="wheels">
-                        <option ng-repeat="(name, d) in data.wheels" value={{name}}>{{name}}</option>
+                <select ng-model="kart.wheels" name="wheels"
+                        ng-options="name for (name, d) in data.wheels">
                 </select>
-                <select ng-model="kart.glider" name="gliders">
-                        <option ng-repeat="(name, d) in data.gliders" value={{name}}>{{name}}</option>
+                <select ng-model="kart.glider" name="gliders"
+                        ng-options="name for (name, d) in data.gliders">
                 </select>
             </div>
 
@@ -43,7 +44,8 @@
                 <hr>
             </div>
         </div>
-        <button class="big-button" id="add-kart" ng-click="addKart()">+</button>
+    </div>
+    <button class="big-button" id="add-kart" ng-click="addKart()">+</button>
     </div>
 </body>
 
