@@ -9,42 +9,46 @@
 
 <body ng-app="mk8statsApp">
     <div ng-controller="KartsCtrl">
-        <div id="karts">
-        <div ng-repeat="kart in karts" class="kart" id="kart-{{kart.id}}" ng-controller="KartCtrl">
-            <div class="kart-options">
-                <select name="characters" ng-model="kart.weight"
-                        ng-options="d.weight as name group by d.weight|uppercase for (name, d) in data.characters">
-                </select>
-                <select ng-model="kart.kart" name="karts"
-                        ng-options="name for (name, d) in data.karts">
-                </select>
-                <select ng-model="kart.wheels" name="wheels"
-                        ng-options="name for (name, d) in data.wheels">
-                </select>
-                <select ng-model="kart.glider" name="gliders"
-                        ng-options="name for (name, d) in data.gliders">
-                </select>
-            </div>
+        <div id="karts-container">
+            <h1>MK8 Kart Builder</h1>
 
-            <div class="kart-stats">
-                <hr>
-                <span class="small">Speed</span>
-                <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.speed[$index]}} max=6></stat-meter>
-                
-                <hr>
-                <span class="small">Handling</span>
-                <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.handling[$index]}} max=6></stat-meter>
-                
-                <hr>
-                <stat-meter name="Acceleration" value={{stats.accel}} max=6></stat-meter>
-                <stat-meter name="Weight" value={{stats.weight}} max=6></stat-meter>
-                <stat-meter name="Traction" value={{stats.traction}} max=6></stat-meter>
-                <stat-meter name="Mini-Turbo" value={{stats.turbo}} max=6></stat-meter>
-                
-                <hr>
-            </div>
-        </div>
-    </div>
+            <div id="karts">
+            <div ng-repeat="kart in karts" class="kart" id="kart-{{kart.id}}" ng-controller="KartCtrl">
+                <div class="kart-options">
+                    <select name="characters" ng-model="kart.weight"
+                            ng-options="d.weight as name group by d.weight|uppercase for (name, d) in data.characters">
+                    </select>
+                    <select ng-model="kart.kart" name="karts"
+                            ng-options="name for (name, d) in data.karts">
+                    </select>
+                    <select ng-model="kart.wheels" name="wheels"
+                            ng-options="name for (name, d) in data.wheels">
+                    </select>
+                    <select ng-model="kart.glider" name="gliders"
+                            ng-options="name for (name, d) in data.gliders">
+                    </select>
+                </div>
+
+                <div class="kart-stats">
+                    <hr>
+                    <span class="small">Speed</span>
+                    <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.speed[$index]}} max=6></stat-meter>
+                    
+                    <hr>
+                    <span class="small">Handling</span>
+                    <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.handling[$index]}} max=6></stat-meter>
+                    
+                    <hr>
+                    <stat-meter name="Acceleration" value={{stats.accel}} max=6></stat-meter>
+                    <stat-meter name="Weight" value={{stats.weight}} max=6></stat-meter>
+                    <stat-meter name="Traction" value={{stats.traction}} max=6></stat-meter>
+                    <stat-meter name="Mini-Turbo" value={{stats.turbo}} max=6></stat-meter>
+                    
+                    <hr>
+                </div>
+            </div> <!-- .kart -->
+            </div> <!-- #karts -->
+        </div> <!-- #karts-container -->
     <button class="big-button" id="add-kart" ng-click="addKart()">+</button>
     </div>
 </body>

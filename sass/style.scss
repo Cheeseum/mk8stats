@@ -3,7 +3,7 @@ $meter-width: $kart-width * 0.5;
 
 $font-family: "Lucida Sans", sans-serif;
 $font-color: black;
-$font-size: 10pt;
+$font-size: 12pt;
 
 $padding: 20px;
 
@@ -24,7 +24,7 @@ $karts-width: 80%;
     @include box-sizing(border-box);
 }
 
-html, body, body > * {
+html, body, body > div {
     background: $fill-color;
 
     width: 100%;
@@ -35,8 +35,7 @@ html, body, body > * {
     color: $font-color;
     font-family: $font-family;
     
-    max-height: 40em;
-    overflow: hidden;
+    min-height: 40em;
     white-space: nowrap;
 }
 
@@ -46,20 +45,20 @@ hr {
 }
 
 // layout
-#karts {
+#karts-container {
     display: inline-block;
 
     font-size: $font-size;
-    overflow-x: auto;
-    overflow-y: hidden;
-    
     max-width: $karts-width;
-    max-height: 40em;
+    height: 100%;
 
     white-space: nowrap;
-    vertical-align: middle;
-
     padding: $padding;
+}
+
+#karts {
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .kart{
@@ -80,6 +79,7 @@ hr {
 
 #add-kart {
     width: 99 - $karts-width; // 99% avoids sub-pixel issues
+    vertical-align: top;
 }
 
 // reusable classes
