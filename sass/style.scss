@@ -1,0 +1,84 @@
+$kart-width: 25em;
+$meter-width: $kart-width * 0.5;
+
+$font-family: monospace;
+$font-size: 10pt;
+
+$padding: 20px;
+
+$primary-color: #ccddff;
+
+@mixin box-sizing($type) {
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    box-sizing: $type;
+}
+
+* {
+    @include box-sizing(border-box);
+}
+
+html, body, body > * {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#karts {
+    font-size: $font-size;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    white-space: nowrap;
+}
+
+#karts > * {
+    vertical-align: middle;
+    padding: $padding;
+    white-space: normal;
+}
+
+.kart{
+    height: 100%;
+
+    background: $primary-color;    
+
+    display: inline-block;
+    width: $kart-width;
+}
+
+.kart-options {
+    padding-bottom: 1em;
+}
+
+.kart-options > select {
+    display: block;
+    width: 100%;
+}
+
+button.big-button {
+    display: inline-block;
+    
+    width: 2em;
+    height: 100%;
+
+    border: 0;
+
+    background: $primary-color;
+    font-size: $font-size * 5;
+}
+
+stat-meter {
+    display: block;
+}
+
+stat-meter > label {
+    display: inline-block;
+    text-align: left;
+    width: $meter-width * 0.5;
+}
+
+stat-meter > meter {
+    width: $meter-width;
+}

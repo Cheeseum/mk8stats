@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body ng-app="mk8statsApp">
+    <div ng-controller="KartsCtrl" id="karts">
+        <div ng-repeat="kart in karts" class="kart" id="kart-{{kart.id}}" ng-controller="KartCtrl">
+            <p> I'm a kart! </p>
+            
+            <div class="kart-options">
+                <select ng-model="kart.weight" name="characters">
+                        <option ng-repeat="(name, d) in data.characters" value={{d.weight}}>{{name}}</option>
+                </select>
+                <select ng-model="kart.kart" name="karts">
+                        <option ng-repeat="(name, d) in data.karts" value={{name}}>{{name}}</option>
+                </select>
+                <select ng-model="kart.wheels" name="wheels">
+                        <option ng-repeat="(name, d) in data.wheels" value={{name}}>{{name}}</option>
+                </select>
+                <select ng-model="kart.glider" name="gliders">
+                        <option ng-repeat="(name, d) in data.gliders" value={{name}}>{{name}}</option>
+                </select>
+            </div>
+
+            <div class="kart-stats">
+                <hr>
+                <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.speed[$index]}}></stat-meter>
+                
+                <hr>
+                <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.handling[$index]}}></stat-meter>
+                
+                <hr>
+                <stat-meter name="Acceleration" value={{stats.accel}}></stat-meter>
+                <stat-meter name="Weight" value={{stats.weight}}></stat-meter>
+                <stat-meter name="Traction" value={{stats.traction}}></stat-meter>
+                <stat-meter name="Mini-Turbo" value={{stats.turbo}}></stat-meter>
+                
+                <hr>
+            </div>
+        </div>
+        <button class="big-button" id="add-kart" ng-click="addKart()">+</button>
+    </div>
+</body>
+
+</html>
