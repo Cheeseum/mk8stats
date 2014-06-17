@@ -15,28 +15,34 @@
             <div id="karts">
             <div ng-repeat="kart in karts" class="kart" id="kart-{{kart.id}}" ng-controller="KartCtrl">
                 <div class="kart-options">
-                    <select name="characters" ng-model="kart.weight"
-                            ng-options="d.weight as name group by d.weight|uppercase for (name, d) in data.characters">
+                    <select ng-model="kart.character"
+                            ng-options="d.name group by d.weight|uppercase for d in gameData.characters | orderBy:'gameData.weights[d.weight].order'" >
                     </select>
-                    <select ng-model="kart.kart" name="karts"
-                            ng-options="name for (name, d) in data.karts">
+                    <select ng-model="kart.body" name="karts"
+                            ng-options="d.name group by d.type|uppercase for d in gameData.bodies | orderBy:'d.name'">
                     </select>
                     <select ng-model="kart.wheels" name="wheels"
-                            ng-options="name for (name, d) in data.wheels">
+                            ng-options="d.name group by d.type|uppercase for d in gameData.wheels | orderBy:'d.name'">
                     </select>
                     <select ng-model="kart.glider" name="gliders"
-                            ng-options="name for (name, d) in data.gliders">
+                            ng-options="d.name group by d.type|uppercase for d in gameData.gliders | orderBy:'d.name'">
                     </select>
                 </div>
 
                 <div class="kart-stats">
                     <hr>
                     <span class="small">Speed</span>
-                    <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.speed[$index]}} max=6></stat-meter>
+                    <stat-meter name="Ground" value={{stats.speed['ground']}} max=6></stat-meter>
+                    <stat-meter name="Water" value={{stats.speed['water']}} max=6></stat-meter>
+                    <stat-meter name="Air" value={{stats.speed['air']}} max=6></stat-meter>
+                    <stat-meter name="Anti-Grav" value={{stats.speed['antigrav']}} max=6></stat-meter>
                     
                     <hr>
                     <span class="small">Handling</span>
-                    <stat-meter ng-repeat="terrain in ['Ground', 'Water', 'Air', 'Anti-Grav']" name="{{terrain}}" value={{stats.handling[$index]}} max=6></stat-meter>
+                    <stat-meter name="Ground" value={{stats.handling['ground']}} max=6></stat-meter>
+                    <stat-meter name="Water" value={{stats.handling['water']}} max=6></stat-meter>
+                    <stat-meter name="Air" value={{stats.handling['air']}} max=6></stat-meter>
+                    <stat-meter name="Anti-Grav" value={{stats.handling['antigrav']}} max=6></stat-meter>
                     
                     <hr>
                     <stat-meter name="Acceleration" value={{stats.accel}} max=6></stat-meter>

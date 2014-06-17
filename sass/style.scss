@@ -1,4 +1,4 @@
-$kart-width: 25em;
+$kart-width: 16em;
 $meter-width: $kart-width * 0.5;
 
 $font-family: "Lucida Sans", sans-serif;
@@ -35,8 +35,12 @@ html, body, body > div {
     color: $font-color;
     font-family: $font-family;
     
-    min-height: 40em;
+    height: 40em;
     white-space: nowrap;
+
+    border-width: 5px 0px 5px 0px;
+    border-color: black;
+    border-style: solid;
 }
 
 hr {
@@ -58,7 +62,6 @@ hr {
 
 #karts {
     overflow-x: auto;
-    overflow-y: hidden;
 }
 
 .kart{

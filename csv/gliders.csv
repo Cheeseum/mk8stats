@@ -1,0 +1,11 @@
+Type,Body,Speed,Speed (Water),Speed (Air),Speed (Ground),Acceleration,Weight,Handling,Handling (Water),Handling (Air),Handling(Ground),Traction,Mini Turbo
+speed,Super Glider,0,0,0.25,0,0,0,0,0,0,0,0,0
+speed,Waddle Wing,0,0,0.25,0,0,0,0,0,0,0,0,0
+speed,Plane Glider,0,0,0.25,0,0,0,0,0,0,0,0,0
+speed,Wario Wing,0,0,0.25,0,0,0,0,0,0,0,0,0
+speed,Gold Glider,0,0,0.25,0,0,0,0,0,0,0,0,0
+acceleration,Flower Glider,0,0,0,0,0.25,-0.25,0,0,0.25,0,0,0.25
+acceleration,Peach Parasol,0,0,0,0,0.25,-0.25,0,0,0.25,0,0,0.25
+acceleration,MKTV Parafoil,0,0,0,0,0.25,-0.25,0,0,0.25,0,0,0.25
+acceleration,Bowser Kite,0,0,0,0,0.25,-0.25,0,0,0.25,0,0,0.25
+acceleration,Cloud Glider,0,0,0,0,0.25,-0.25,0,0,0.25,0,0,0.25
