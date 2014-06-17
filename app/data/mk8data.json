@@ -6,99 +6,39 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
+        "air": 0.0, 
+        "antigrav": 0.0
       }, 
       "accel": 0.0, 
       "weight": 0.0, 
       "handling": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
+        "air": 0.0, 
+        "antigrav": 0.0
       }, 
       "traction": 0.0, 
       "turbo": 0.0
     }, 
     {
-      "name": "Prancer", 
+      "name": "Pipe Frame", 
       "type": "kart", 
       "speed": {
         "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
-      }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Cat Cruiser", 
-      "type": "kart", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
-      }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Sneeker", 
-      "type": "kart", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
-      }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Gold Standard", 
-      "type": "kart", 
-      "speed": {
-        "ground": 0.5, 
         "water": 0.25, 
         "air": 0.25, 
-        "antigrav": 0.0
+        "antigrav": -0.25
       }, 
-      "accel": -0.25, 
-      "weight": 0.25, 
+      "accel": 0.25, 
+      "weight": -0.25, 
       "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
+        "ground": 0.5, 
+        "water": 0.5, 
+        "air": 0.75, 
         "antigrav": 0.0
       }, 
-      "traction": -1.0, 
-      "turbo": -0.5
+      "traction": -0.5, 
+      "turbo": 0.25
     }, 
     {
       "name": "Mach 8", 
@@ -106,99 +46,19 @@
       "speed": {
         "ground": 0.5, 
         "water": 0.25, 
-        "air": 0.25, 
-        "antigrav": 0.0
+        "air": 0.5, 
+        "antigrav": -0.25
       }, 
       "accel": -0.25, 
       "weight": 0.25, 
       "handling": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.0
+        "air": 0.0, 
+        "antigrav": -0.25
       }, 
       "traction": -1.0, 
       "turbo": -0.5
-    }, 
-    {
-      "name": "Circuit Special", 
-      "type": "kart", 
-      "speed": {
-        "ground": 0.5, 
-        "water": 0.25, 
-        "air": 0.25, 
-        "antigrav": 0.0
-      }, 
-      "accel": -0.25, 
-      "weight": 0.25, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.0
-      }, 
-      "traction": -1.0, 
-      "turbo": -0.5
-    }, 
-    {
-      "name": "Sports Coupe", 
-      "type": "kart", 
-      "speed": {
-        "ground": 0.5, 
-        "water": 0.25, 
-        "air": 0.25, 
-        "antigrav": 0.0
-      }, 
-      "accel": -0.25, 
-      "weight": 0.25, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.0
-      }, 
-      "traction": -1.0, 
-      "turbo": -0.5
-    }, 
-    {
-      "name": "Bandwagon", 
-      "type": "kart", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.5, 
-        "air": -0.25, 
-        "antigrav": 0.0
-      }, 
-      "accel": -0.5, 
-      "weight": 0.5, 
-      "handling": {
-        "ground": -0.5, 
-        "water": 0.75, 
-        "air": -0.5, 
-        "antigrav": -0.5
-      }, 
-      "traction": 0.5, 
-      "turbo": -0.75
-    }, 
-    {
-      "name": "TriSpeeder", 
-      "type": "kart", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.5, 
-        "air": -0.25, 
-        "antigrav": 0.0
-      }, 
-      "accel": -0.5, 
-      "weight": 0.5, 
-      "handling": {
-        "ground": -0.5, 
-        "water": 0.75, 
-        "air": -0.5, 
-        "antigrav": -0.5
-      }, 
-      "traction": 0.5, 
-      "turbo": -0.75
     }, 
     {
       "name": "Steel Driver", 
@@ -206,19 +66,119 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.5, 
-        "air": -0.25, 
-        "antigrav": 0.0
+        "air": 0.0, 
+        "antigrav": -0.25
       }, 
       "accel": -0.5, 
       "weight": 0.5, 
       "handling": {
         "ground": -0.5, 
         "water": 0.75, 
-        "air": -0.5, 
-        "antigrav": -0.5
+        "air": -0.25, 
+        "antigrav": -0.75
       }, 
       "traction": 0.5, 
       "turbo": -0.75
+    }, 
+    {
+      "name": "Cat Cruiser", 
+      "type": "kart", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
+    }, 
+    {
+      "name": "Circuit Special", 
+      "type": "kart", 
+      "speed": {
+        "ground": 0.5, 
+        "water": 0.25, 
+        "air": 0.5, 
+        "antigrav": -0.25
+      }, 
+      "accel": -0.25, 
+      "weight": 0.25, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": -0.25
+      }, 
+      "traction": -1.0, 
+      "turbo": -0.5
+    }, 
+    {
+      "name": "Tri-Speeder", 
+      "type": "kart", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.5, 
+        "air": 0.0, 
+        "antigrav": -0.25
+      }, 
+      "accel": -0.5, 
+      "weight": 0.5, 
+      "handling": {
+        "ground": -0.5, 
+        "water": 0.75, 
+        "air": -0.25, 
+        "antigrav": -0.75
+      }, 
+      "traction": 0.5, 
+      "turbo": -0.75
+    }, 
+    {
+      "name": "Badwagon", 
+      "type": "kart", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.5, 
+        "air": 0.0, 
+        "antigrav": -0.25
+      }, 
+      "accel": -0.5, 
+      "weight": 0.5, 
+      "handling": {
+        "ground": -0.5, 
+        "water": 0.75, 
+        "air": -0.25, 
+        "antigrav": -0.75
+      }, 
+      "traction": 0.5, 
+      "turbo": -0.75
+    }, 
+    {
+      "name": "Prancer", 
+      "type": "kart", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
     }, 
     {
       "name": "Biddybuggy", 
@@ -226,16 +186,16 @@
       "speed": {
         "ground": -0.75, 
         "water": 0.5, 
-        "air": 0.25, 
-        "antigrav": 0.0
+        "air": 0.5, 
+        "antigrav": -0.25
       }, 
       "accel": 1.25, 
       "weight": -0.5, 
       "handling": {
         "ground": 0.5, 
         "water": 0.75, 
-        "air": 0.5, 
-        "antigrav": 0.25
+        "air": 0.75, 
+        "antigrav": 0.0
       }, 
       "traction": -0.25, 
       "turbo": 1.0
@@ -246,79 +206,79 @@
       "speed": {
         "ground": -0.75, 
         "water": 0.5, 
-        "air": 0.25, 
-        "antigrav": 0.0
+        "air": 0.5, 
+        "antigrav": -0.25
       }, 
       "accel": 1.25, 
       "weight": -0.5, 
       "handling": {
         "ground": 0.5, 
         "water": 0.75, 
-        "air": 0.5, 
-        "antigrav": 0.25
+        "air": 0.75, 
+        "antigrav": 0.0
       }, 
       "traction": -0.25, 
       "turbo": 1.0
     }, 
     {
-      "name": "Pipe Frame", 
+      "name": "Sneeker", 
       "type": "kart", 
       "speed": {
         "ground": 0.0, 
-        "water": 0.25, 
+        "water": 0.0, 
         "air": 0.0, 
         "antigrav": 0.0
-      }, 
-      "accel": 0.25, 
-      "weight": 0.5, 
-      "handling": {
-        "ground": 0.5, 
-        "water": 0.5, 
-        "air": 0.25, 
-        "antigrav": 0.5
-      }, 
-      "traction": -0.5, 
-      "turbo": 0.25
-    }, 
-    {
-      "name": "The Duke", 
-      "type": "bike", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
       }, 
       "accel": 0.0, 
       "weight": 0.0, 
       "handling": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
+        "air": 0.0, 
+        "antigrav": 0.0
       }, 
       "traction": 0.0, 
       "turbo": 0.0
     }, 
     {
-      "name": "Mr. Scooty", 
-      "type": "bike", 
+      "name": "Sports Coupe", 
+      "type": "kart", 
       "speed": {
-        "ground": -0.75, 
-        "water": 0.5, 
-        "air": 0.25, 
-        "antigrav": 0.0
-      }, 
-      "accel": 1.25, 
-      "weight": -0.5, 
-      "handling": {
         "ground": 0.5, 
-        "water": 0.75, 
+        "water": 0.25, 
         "air": 0.5, 
-        "antigrav": 0.25
+        "antigrav": -0.25
       }, 
-      "traction": -0.25, 
-      "turbo": 1.0
+      "accel": -0.25, 
+      "weight": 0.25, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": -0.25
+      }, 
+      "traction": -1.0, 
+      "turbo": -0.5
+    }, 
+    {
+      "name": "Gold Standard", 
+      "type": "kart", 
+      "speed": {
+        "ground": 0.5, 
+        "water": 0.25, 
+        "air": 0.5, 
+        "antigrav": -0.25
+      }, 
+      "accel": -0.25, 
+      "weight": 0.25, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": -0.25
+      }, 
+      "traction": -1.0, 
+      "turbo": -0.5
     }, 
     {
       "name": "Standard Bike", 
@@ -326,99 +286,19 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.25, 
-        "air": 0.0, 
-        "antigrav": 0.0
+        "air": 0.25, 
+        "antigrav": -0.25
       }, 
       "accel": 0.25, 
-      "weight": 0.5, 
-      "handling": {
-        "ground": 0.5, 
-        "water": 0.5, 
-        "air": 0.25, 
-        "antigrav": 0.5
-      }, 
-      "traction": -0.5, 
-      "turbo": 0.25
-    }, 
-    {
-      "name": "Flame Ride", 
-      "type": "bike", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.25, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.25, 
-      "weight": 0.5, 
-      "handling": {
-        "ground": 0.5, 
-        "water": 0.5, 
-        "air": 0.25, 
-        "antigrav": 0.5
-      }, 
-      "traction": -0.5, 
-      "turbo": 0.25
-    }, 
-    {
-      "name": "Varmit", 
-      "type": "bike", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.25, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.25, 
-      "weight": 0.5, 
-      "handling": {
-        "ground": 0.5, 
-        "water": 0.5, 
-        "air": 0.25, 
-        "antigrav": 0.5
-      }, 
-      "traction": -0.5, 
-      "turbo": 0.25
-    }, 
-    {
-      "name": "Sports Bike", 
-      "type": "bike", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.75, 
       "weight": -0.25, 
       "handling": {
-        "ground": 0.75, 
-        "water": 0.75, 
-        "air": 0.5, 
-        "antigrav": 0.75
-      }, 
-      "traction": -1.25, 
-      "turbo": 0.5
-    }, 
-    {
-      "name": "Jet Bike", 
-      "type": "bike", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
+        "ground": 0.5, 
+        "water": 0.5, 
+        "air": 0.75, 
         "antigrav": 0.0
       }, 
-      "accel": 0.75, 
-      "weight": -0.25, 
-      "handling": {
-        "ground": 0.75, 
-        "water": 0.75, 
-        "air": 0.5, 
-        "antigrav": 0.75
-      }, 
-      "traction": -1.25, 
-      "turbo": 0.5
+      "traction": -0.5, 
+      "turbo": 0.25
     }, 
     {
       "name": "Comet", 
@@ -426,16 +306,136 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.0
+        "air": 0.0, 
+        "antigrav": -0.25
       }, 
       "accel": 0.75, 
       "weight": -0.25, 
       "handling": {
         "ground": 0.75, 
         "water": 0.75, 
+        "air": 0.75, 
+        "antigrav": 0.5
+      }, 
+      "traction": -1.25, 
+      "turbo": 0.5
+    }, 
+    {
+      "name": "Sport Bike", 
+      "type": "bike", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": -0.25
+      }, 
+      "accel": 0.75, 
+      "weight": -0.25, 
+      "handling": {
+        "ground": 0.75, 
+        "water": 0.75, 
+        "air": 0.75, 
+        "antigrav": 0.5
+      }, 
+      "traction": -1.25, 
+      "turbo": 0.5
+    }, 
+    {
+      "name": "The Duke", 
+      "type": "bike", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
+    }, 
+    {
+      "name": "Flame Rider", 
+      "type": "bike", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.25, 
+        "air": 0.25, 
+        "antigrav": -0.25
+      }, 
+      "accel": 0.25, 
+      "weight": -0.25, 
+      "handling": {
+        "ground": 0.5, 
+        "water": 0.5, 
+        "air": 0.75, 
+        "antigrav": 0.0
+      }, 
+      "traction": -0.5, 
+      "turbo": 0.25
+    }, 
+    {
+      "name": "Varmint", 
+      "type": "bike", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.25, 
+        "air": 0.25, 
+        "antigrav": -0.25
+      }, 
+      "accel": 0.25, 
+      "weight": -0.25, 
+      "handling": {
+        "ground": 0.5, 
+        "water": 0.5, 
+        "air": 0.75, 
+        "antigrav": 0.0
+      }, 
+      "traction": -0.5, 
+      "turbo": 0.25
+    }, 
+    {
+      "name": "Mr. Scooty", 
+      "type": "bike", 
+      "speed": {
+        "ground": -0.75, 
+        "water": 0.5, 
         "air": 0.5, 
-        "antigrav": 0.75
+        "antigrav": -0.25
+      }, 
+      "accel": 1.25, 
+      "weight": -0.5, 
+      "handling": {
+        "ground": 0.5, 
+        "water": 0.75, 
+        "air": 0.75, 
+        "antigrav": 0.0
+      }, 
+      "traction": -0.25, 
+      "turbo": 1.0
+    }, 
+    {
+      "name": "Jet Bike", 
+      "type": "bike", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": -0.25
+      }, 
+      "accel": 0.75, 
+      "weight": -0.25, 
+      "handling": {
+        "ground": 0.75, 
+        "water": 0.75, 
+        "air": 0.75, 
+        "antigrav": 0.5
       }, 
       "traction": -1.25, 
       "turbo": 0.5
@@ -446,39 +446,39 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.0
+        "air": 0.0, 
+        "antigrav": -0.25
       }, 
       "accel": 0.75, 
       "weight": -0.25, 
       "handling": {
         "ground": 0.75, 
         "water": 0.75, 
-        "air": 0.5, 
-        "antigrav": 0.75
+        "air": 0.75, 
+        "antigrav": 0.5
       }, 
       "traction": -1.25, 
       "turbo": 0.5
     }, 
     {
-      "name": "Teddy Buggy", 
+      "name": "Standard ATV", 
       "type": "atv", 
       "speed": {
         "ground": 0.0, 
-        "water": 0.0, 
-        "air": -0.25, 
-        "antigrav": 0.25
+        "water": 0.5, 
+        "air": 0.0, 
+        "antigrav": -0.25
       }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
+      "accel": -0.5, 
+      "weight": 0.5, 
       "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
+        "ground": -0.5, 
+        "water": 0.75, 
         "air": -0.25, 
-        "antigrav": 0.25
+        "antigrav": -0.75
       }, 
-      "traction": 0.0, 
-      "turbo": 0.0
+      "traction": 0.5, 
+      "turbo": -0.75
     }, 
     {
       "name": "Wild Wiggler", 
@@ -486,19 +486,39 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.25, 
-        "air": 0.0, 
-        "antigrav": 0.0
+        "air": 0.25, 
+        "antigrav": -0.25
       }, 
       "accel": 0.25, 
-      "weight": 0.5, 
+      "weight": -0.25, 
       "handling": {
         "ground": 0.5, 
         "water": 0.5, 
-        "air": 0.25, 
-        "antigrav": 0.5
+        "air": 0.75, 
+        "antigrav": 0.0
       }, 
       "traction": -0.5, 
       "turbo": 0.25
+    }, 
+    {
+      "name": "Teddy Buggy", 
+      "type": "atv", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
     }
   ], 
   "wheels": [
@@ -507,67 +527,7 @@
       "type": "", 
       "speed": {
         "ground": 0.0, 
-        "water": 0.5, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
-      "handling": {
-        "ground": 0.0, 
         "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Blue Standard", 
-      "type": "", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.5, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Offroad", 
-      "type": "", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.5, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Retro Offroad", 
-      "type": "", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.5, 
         "air": 0.0, 
         "antigrav": 0.0
       }, 
@@ -587,12 +547,12 @@
       "type": "", 
       "speed": {
         "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": -0.5
+        "water": -0.5, 
+        "air": -0.25, 
+        "antigrav": 0.0
       }, 
-      "accel": 0.0, 
-      "weight": -0.5, 
+      "accel": -0.5, 
+      "weight": 0.5, 
       "handling": {
         "ground": -0.75, 
         "water": -0.75, 
@@ -601,113 +561,13 @@
       }, 
       "traction": 0.75, 
       "turbo": 0.0
-    }, 
-    {
-      "name": "Hot Monster", 
-      "type": "", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": -0.5
-      }, 
-      "accel": 0.0, 
-      "weight": -0.5, 
-      "handling": {
-        "ground": -0.75, 
-        "water": -0.75, 
-        "air": -0.75, 
-        "antigrav": -0.75
-      }, 
-      "traction": 0.75, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Slick", 
-      "type": "", 
-      "speed": {
-        "ground": 0.5, 
-        "water": -0.5, 
-        "air": 0.5, 
-        "antigrav": 0.5
-      }, 
-      "accel": -0.25, 
-      "weight": 0.25, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "traction": -1.0, 
-      "turbo": 0.25
-    }, 
-    {
-      "name": "Cyber Slick", 
-      "type": "", 
-      "speed": {
-        "ground": 0.5, 
-        "water": -0.5, 
-        "air": 0.5, 
-        "antigrav": 0.5
-      }, 
-      "accel": -0.25, 
-      "weight": 0.25, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "traction": -1.0, 
-      "turbo": 0.25
     }, 
     {
       "name": "Roller", 
       "type": "", 
       "speed": {
         "ground": -0.5, 
-        "water": 0.5, 
-        "air": 0.5, 
-        "antigrav": -0.5
-      }, 
-      "accel": 1.0, 
-      "weight": -0.5, 
-      "handling": {
-        "ground": 0.25, 
-        "water": 0.25, 
-        "air": 0.25, 
-        "antigrav": 0.25
-      }, 
-      "traction": -0.25, 
-      "turbo": 1.5
-    }, 
-    {
-      "name": "Azure Roller", 
-      "type": "", 
-      "speed": {
-        "ground": -0.5, 
-        "water": 0.5, 
-        "air": 0.5, 
-        "antigrav": -0.5
-      }, 
-      "accel": 1.0, 
-      "weight": -0.5, 
-      "handling": {
-        "ground": 0.25, 
-        "water": 0.25, 
-        "air": 0.25, 
-        "antigrav": 0.25
-      }, 
-      "traction": -0.25, 
-      "turbo": 1.5
-    }, 
-    {
-      "name": "Button", 
-      "type": "", 
-      "speed": {
-        "ground": -0.5, 
-        "water": 0.5, 
+        "water": 0.0, 
         "air": 0.5, 
         "antigrav": -0.5
       }, 
@@ -727,11 +587,11 @@
       "type": "", 
       "speed": {
         "ground": 0.25, 
-        "water": 0.25, 
+        "water": -0.25, 
         "air": 0.25, 
         "antigrav": 0.25
       }, 
-      "accel": 0.25, 
+      "accel": -0.25, 
       "weight": 0.0, 
       "handling": {
         "ground": 0.25, 
@@ -740,39 +600,39 @@
         "antigrav": 0.25
       }, 
       "traction": -0.5, 
-      "turbo": 0.0
+      "turbo": 0.25
     }, 
     {
-      "name": "Crimson Slim", 
+      "name": "Slick", 
       "type": "", 
       "speed": {
-        "ground": 0.25, 
-        "water": 0.25, 
-        "air": 0.25, 
-        "antigrav": 0.25
+        "ground": 0.5, 
+        "water": -1.0, 
+        "air": 0.5, 
+        "antigrav": 0.5
       }, 
-      "accel": 0.25, 
-      "weight": 0.0, 
+      "accel": -0.25, 
+      "weight": 0.25, 
       "handling": {
-        "ground": 0.25, 
-        "water": 0.25, 
-        "air": 0.25, 
-        "antigrav": 0.25
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
       }, 
-      "traction": -0.5, 
-      "turbo": 0.0
+      "traction": -1.0, 
+      "turbo": 0.25
     }, 
     {
       "name": "Metal", 
       "type": "", 
       "speed": {
         "ground": 0.25, 
-        "water": 0.25, 
+        "water": -0.25, 
         "air": 0.25, 
         "antigrav": 0.25
       }, 
-      "accel": 0.25, 
-      "weight": -0.5, 
+      "accel": -0.5, 
+      "weight": 0.5, 
       "handling": {
         "ground": 0.0, 
         "water": 0.0, 
@@ -783,31 +643,51 @@
       "turbo": 0.0
     }, 
     {
-      "name": "Gold", 
+      "name": "Button", 
       "type": "", 
       "speed": {
+        "ground": -0.5, 
+        "water": 0.0, 
+        "air": 0.5, 
+        "antigrav": -0.5
+      }, 
+      "accel": 1.0, 
+      "weight": -0.5, 
+      "handling": {
         "ground": 0.25, 
         "water": 0.25, 
         "air": 0.25, 
         "antigrav": 0.25
       }, 
-      "accel": 0.25, 
-      "weight": -0.5, 
+      "traction": -0.25, 
+      "turbo": 1.5
+    }, 
+    {
+      "name": "Off-Road", 
+      "type": "", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
       "handling": {
         "ground": 0.0, 
         "water": 0.0, 
         "air": 0.0, 
         "antigrav": 0.0
       }, 
-      "traction": -0.5, 
+      "traction": 0.0, 
       "turbo": 0.0
     }, 
     {
-      "name": "Wood", 
+      "name": "Sponge", 
       "type": "", 
       "speed": {
-        "ground": -0.2, 
-        "water": -0.5, 
+        "ground": -0.25, 
+        "water": -1.0, 
         "air": 0.25, 
         "antigrav": -0.25
       }, 
@@ -823,11 +703,11 @@
       "turbo": 0.75
     }, 
     {
-      "name": "Sponge", 
+      "name": "Wood", 
       "type": "", 
       "speed": {
-        "ground": -0.2, 
-        "water": -0.5, 
+        "ground": -0.25, 
+        "water": -1.0, 
         "air": 0.25, 
         "antigrav": -0.25
       }, 
@@ -846,8 +726,8 @@
       "name": "Cushion", 
       "type": "", 
       "speed": {
-        "ground": -0.2, 
-        "water": -0.5, 
+        "ground": -0.25, 
+        "water": -1.0, 
         "air": 0.25, 
         "antigrav": -0.25
       }, 
@@ -861,6 +741,146 @@
       }, 
       "traction": 0.5, 
       "turbo": 0.75
+    }, 
+    {
+      "name": "Blue Standard", 
+      "type": "", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
+    }, 
+    {
+      "name": "Hot Monster", 
+      "type": "", 
+      "speed": {
+        "ground": 0.0, 
+        "water": -0.5, 
+        "air": -0.25, 
+        "antigrav": 0.0
+      }, 
+      "accel": -0.5, 
+      "weight": 0.5, 
+      "handling": {
+        "ground": -0.75, 
+        "water": -0.75, 
+        "air": -0.75, 
+        "antigrav": -0.75
+      }, 
+      "traction": 0.75, 
+      "turbo": 0.0
+    }, 
+    {
+      "name": "Azure Roller", 
+      "type": "", 
+      "speed": {
+        "ground": -0.5, 
+        "water": 0.0, 
+        "air": 0.5, 
+        "antigrav": -0.5
+      }, 
+      "accel": 1.0, 
+      "weight": -0.5, 
+      "handling": {
+        "ground": 0.25, 
+        "water": 0.25, 
+        "air": 0.25, 
+        "antigrav": 0.25
+      }, 
+      "traction": -0.25, 
+      "turbo": 1.5
+    }, 
+    {
+      "name": "Crimson Slim", 
+      "type": "", 
+      "speed": {
+        "ground": 0.25, 
+        "water": -0.25, 
+        "air": 0.25, 
+        "antigrav": 0.25
+      }, 
+      "accel": -0.25, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.25, 
+        "water": 0.25, 
+        "air": 0.25, 
+        "antigrav": 0.25
+      }, 
+      "traction": -0.5, 
+      "turbo": 0.25
+    }, 
+    {
+      "name": "Cyber Slick", 
+      "type": "", 
+      "speed": {
+        "ground": 0.5, 
+        "water": -1.0, 
+        "air": 0.5, 
+        "antigrav": 0.5
+      }, 
+      "accel": -0.25, 
+      "weight": 0.25, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": -1.0, 
+      "turbo": 0.25
+    }, 
+    {
+      "name": "Retro Off-Road", 
+      "type": "", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
+    }, 
+    {
+      "name": "Gold Tires", 
+      "type": "", 
+      "speed": {
+        "ground": 0.25, 
+        "water": -0.25, 
+        "air": 0.25, 
+        "antigrav": 0.25
+      }, 
+      "accel": -0.5, 
+      "weight": 0.5, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": -0.5, 
+      "turbo": 0.0
     }
   ], 
   "gliders": [
@@ -870,7 +890,47 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
+    }, 
+    {
+      "name": "Cloud Glider", 
+      "type": "acceleration", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": -0.25, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.25, 
+      "weight": -0.25, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
         "air": 0.25, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.25
+    }, 
+    {
+      "name": "Wario Wing", 
+      "type": "speed", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
         "antigrav": 0.0
       }, 
       "accel": 0.0, 
@@ -890,7 +950,7 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": 0.25, 
+        "air": 0.0, 
         "antigrav": 0.0
       }, 
       "accel": 0.0, 
@@ -903,86 +963,6 @@
       }, 
       "traction": 0.0, 
       "turbo": 0.0
-    }, 
-    {
-      "name": "Plane Glider", 
-      "type": "speed", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.25, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Wario Wing", 
-      "type": "speed", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.25, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Gold Glider", 
-      "type": "speed", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.25, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.0, 
-      "weight": 0.0, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.0
-    }, 
-    {
-      "name": "Flower Glider", 
-      "type": "acceleration", 
-      "speed": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.0, 
-        "antigrav": 0.0
-      }, 
-      "accel": 0.25, 
-      "weight": -0.25, 
-      "handling": {
-        "ground": 0.0, 
-        "water": 0.0, 
-        "air": 0.25, 
-        "antigrav": 0.0
-      }, 
-      "traction": 0.0, 
-      "turbo": 0.25
     }, 
     {
       "name": "Peach Parasol", 
@@ -990,7 +970,7 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": 0.0, 
+        "air": -0.25, 
         "antigrav": 0.0
       }, 
       "accel": 0.25, 
@@ -1005,12 +985,52 @@
       "turbo": 0.25
     }, 
     {
-      "name": "MKTV Parafoil", 
+      "name": "Parachute", 
       "type": "acceleration", 
       "speed": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": 0.0, 
+        "air": -0.25, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.25, 
+      "weight": -0.25, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.25, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.25
+    }, 
+    {
+      "name": "Parafoil", 
+      "type": "acceleration", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": -0.25, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.25, 
+      "weight": -0.25, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.25, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.25
+    }, 
+    {
+      "name": "Flower Glider", 
+      "type": "acceleration", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": -0.25, 
         "antigrav": 0.0
       }, 
       "accel": 0.25, 
@@ -1030,7 +1050,7 @@
       "speed": {
         "ground": 0.0, 
         "water": 0.0, 
-        "air": 0.0, 
+        "air": -0.25, 
         "antigrav": 0.0
       }, 
       "accel": 0.25, 
@@ -1045,12 +1065,32 @@
       "turbo": 0.25
     }, 
     {
-      "name": "Cloud Glider", 
-      "type": "acceleration", 
+      "name": "Plane Glider", 
+      "type": "speed", 
       "speed": {
         "ground": 0.0, 
         "water": 0.0, 
         "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
+    }, 
+    {
+      "name": "MKTV Parafoil", 
+      "type": "acceleration", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": -0.25, 
         "antigrav": 0.0
       }, 
       "accel": 0.25, 
@@ -1063,6 +1103,26 @@
       }, 
       "traction": 0.0, 
       "turbo": 0.25
+    }, 
+    {
+      "name": "Gold Glider", 
+      "type": "speed", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
     }
   ], 
   "weights": {
