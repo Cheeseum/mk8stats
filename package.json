@@ -1,4 +1,10 @@
 {
+  "name": "mk8stats",
+  "version": "0.1.0",
+  "author": {
+    "name": "Cheeseum"
+  },
+  "license": "MPL-2.0",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -9,6 +15,9 @@
     "grunt-contrib-qunit": "~0.3.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-sass": "^0.7.3"
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-processhtml": "^0.3.3",
+    "grunt-css": "^0.5.4",
+    "grunt-contrib-copy": "^0.5.0"
   }
 }

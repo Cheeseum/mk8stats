@@ -9,16 +9,25 @@ module.exports = function(grunt) {
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+      ' License: <%= pkg.license %> */\n',
     // Task configuration.
+    copy: {
+        dist: {
+            files: [
+                { expand: true, src : 'app/data/*.json', dest: 'dist/data/', flatten: true },
+                { expand: true, src : 'app/js/lib/*.js', dest: 'dist/js/lib/', flatten: true },
+                { expand: true, src : 'app/partials/*.html', dest: 'dist/partials/', flatten: true }
+            ]
+        }
+    },
     concat: {
       options: {
         banner: '<%= banner %>',
         stripBanners: true
       },
       dist: {
-        src: ['lib/<%= pkg.name %>.js'],
-        dest: 'dist/<%= pkg.name %>.js'
+        src: ['app/js/*.js'],
+        dest: 'build/js/<%= pkg.name %>.js'
       }
     },
     uglify: {
@@ -27,7 +36,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: '<%= concat.dist.dest %>',
-        dest: 'dist/<%= pkg.name %>.min.js'
+        dest: 'dist/js/<%= pkg.name %>.min.js'
       }
     },
     jshint: {
@@ -50,13 +59,26 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       }
     },
-    qunit: {
-      files: ['test/**/*.html']
-    },
     sass: {
         compile: {
             files: {
                 'app/css/style.css': 'sass/style.scss'
+            }
+        }
+    },
+    cssmin: {
+        options: {
+            banner: '<%= banner %>'
+        },
+        dist: {
+            src: 'app/css/*.css',
+            dest: 'dist/css/style.min.css'
+        }
+    },
+    processhtml: {
+        dist: {
+            files: {
+                'dist/index.html': 'app/index.html'
             }
         }
     },
@@ -74,13 +96,16 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-css');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-processhtml');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
-
+  grunt.registerTask('build', ['jshint', 'sass']);
+  grunt.registerTask('dist', ['build', 'concat', 'uglify', 'cssmin', 'processhtml', 'copy:dist']);
+  grunt.registerTask('default', ['watch']);
 };

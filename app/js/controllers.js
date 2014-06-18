@@ -37,7 +37,7 @@ function mergeStats () {
     return stats;
 }
 
-mk8statsApp.controller('KartsCtrl', function ($scope, $http) {
+mk8statsApp.controller('KartsCtrl', ['$scope', '$http', function ($scope, $http) {
     $http.get('data/mk8data.json').success(function(data, st) {
         $scope.gameData = data;
         $scope.addKart();
@@ -53,9 +53,9 @@ mk8statsApp.controller('KartsCtrl', function ($scope, $http) {
 
         $scope.karts.push(kart);
     };
-});
+}]);
 
-mk8statsApp.controller('KartCtrl', function ($scope) {
+mk8statsApp.controller('KartCtrl', ['$scope', function ($scope) {
     //$scope.data = gameData;
     $scope.statKeys = statKeys;
     $scope.terrains = ['Ground', 'Water', 'Air', 'Anti-Grav'];
@@ -67,7 +67,7 @@ mk8statsApp.controller('KartCtrl', function ($scope) {
             $scope.stats = mergeStats($scope.gameData.weights[k.character.weight], k.body, k.wheels, k.glider);
         }
     });
-})
+}])
 .directive('statMeter', function () {
     return {
         restrict: 'E',
