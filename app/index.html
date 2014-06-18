@@ -37,23 +37,23 @@
                 <div class="kart-stats">
                     <hr>
                     <span class="small">Speed</span>
-                    <stat-meter name="Ground" value={{stats.speed['ground']}} max=6></stat-meter>
-                    <stat-meter name="Water" value={{stats.speed['water']}} max=6></stat-meter>
-                    <stat-meter name="Air" value={{stats.speed['air']}} max=6></stat-meter>
-                    <stat-meter name="Anti-Grav" value={{stats.speed['antigrav']}} max=6></stat-meter>
+                    <stat-meter name="Ground" value="{{stats.speed['ground'] | number:2}}" max=6></stat-meter>
+                    <stat-meter name="Water" value="{{stats.speed['water'] | number:2}}" max=6></stat-meter>
+                    <stat-meter name="Air" value="{{stats.speed['air'] | number:2}}" max=6></stat-meter>
+                    <stat-meter name="Anti-Grav" value="{{stats.speed['antigrav'] | number:2}}" max=6></stat-meter>
                     
                     <hr>
                     <span class="small">Handling</span>
-                    <stat-meter name="Ground" value={{stats.handling['ground']}} max=6></stat-meter>
-                    <stat-meter name="Water" value={{stats.handling['water']}} max=6></stat-meter>
-                    <stat-meter name="Air" value={{stats.handling['air']}} max=6></stat-meter>
-                    <stat-meter name="Anti-Grav" value={{stats.handling['antigrav']}} max=6></stat-meter>
+                    <stat-meter name="Ground" value="{{stats.handling['ground'] | number:2}}" max=6></stat-meter>
+                    <stat-meter name="Water" value="{{stats.handling['water'] | number:2}}" max=6></stat-meter>
+                    <stat-meter name="Air" value="{{stats.handling['air'] | number:2}}" max=6></stat-meter>
+                    <stat-meter name="Anti-Grav" value="{{stats.handling['antigrav'] | number:2}}" max=6></stat-meter>
                     
                     <hr>
-                    <stat-meter name="Acceleration" value={{stats.accel}} max=6></stat-meter>
-                    <stat-meter name="Weight" value={{stats.weight}} max=6></stat-meter>
-                    <stat-meter name="Traction" value={{stats.traction}} max=6></stat-meter>
-                    <stat-meter name="Mini-Turbo" value={{stats.turbo}} max=6></stat-meter>
+                    <stat-meter name="Acceleration" value="{{stats.accel | number:2}}" max=6></stat-meter>
+                    <stat-meter name="Weight" value="{{stats.weight | number:2}}" max=6></stat-meter>
+                    <stat-meter name="Traction" value="{{stats.traction | number:2}}" max=6></stat-meter>
+                    <stat-meter name="Mini-Turbo" value="{{stats.turbo | number:2}}" max=6></stat-meter>
                     
                     <hr>
                 </div>
