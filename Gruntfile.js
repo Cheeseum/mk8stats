@@ -91,6 +91,13 @@ module.exports = function(grunt) {
         files: '**/*.scss',
         tasks: ['sass']
       }
+    },
+    'gh-pages': {
+        options: {
+            base: 'dist',
+            message: 'Auto-generated commit'
+        },
+        src: '**/*'
     }
   });
 
@@ -103,9 +110,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   // Default task.
   grunt.registerTask('build', ['jshint', 'sass']);
   grunt.registerTask('dist', ['build', 'concat', 'uglify', 'cssmin', 'processhtml', 'copy:dist']);
+  grunt.registerTask('publish', ['dist', 'gh-pages']);
   grunt.registerTask('default', ['watch']);
 };
