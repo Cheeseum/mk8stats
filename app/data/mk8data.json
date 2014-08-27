@@ -281,6 +281,66 @@
       "turbo": -0.5
     }, 
     {
+      "name": "GLA", 
+      "type": "kart", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.5, 
+        "air": 0.0, 
+        "antigrav": -0.25
+      }, 
+      "accel": -0.5, 
+      "weight": 0.5, 
+      "handling": {
+        "ground": -0.5, 
+        "water": 0.75, 
+        "air": -0.25, 
+        "antigrav": -0.75
+      }, 
+      "traction": 0.5, 
+      "turbo": -0.75
+    }, 
+    {
+      "name": "W 25 Silver Arrow", 
+      "type": "kart", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.25, 
+        "air": 0.25, 
+        "antigrav": -0.25
+      }, 
+      "accel": 0.25, 
+      "weight": -0.25, 
+      "handling": {
+        "ground": 0.5, 
+        "water": 0.5, 
+        "air": 0.5, 
+        "antigrav": 0.25
+      }, 
+      "traction": -0.5, 
+      "turbo": 0.25
+    }, 
+    {
+      "name": "300 SL Roadster", 
+      "type": "kart", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
+      "turbo": 0.0
+    }, 
+    {
       "name": "Standard Bike", 
       "type": "bike", 
       "speed": {
@@ -459,6 +519,26 @@
       }, 
       "traction": -1.25, 
       "turbo": 0.5
+    }, 
+    {
+      "name": "Varmint", 
+      "type": "bike", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.25, 
+        "air": 0.25, 
+        "antigrav": -0.25
+      }, 
+      "accel": 0.25, 
+      "weight": -0.25, 
+      "handling": {
+        "ground": 0.5, 
+        "water": 0.5, 
+        "air": 0.5, 
+        "antigrav": 0.25
+      }, 
+      "traction": -0.5, 
+      "turbo": 0.25
     }, 
     {
       "name": "Standard ATV", 
@@ -880,6 +960,26 @@
         "antigrav": 0.0
       }, 
       "traction": -0.5, 
+      "turbo": 0.0
+    }, 
+    {
+      "name": "GLA", 
+      "type": "", 
+      "speed": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "accel": 0.0, 
+      "weight": 0.0, 
+      "handling": {
+        "ground": 0.0, 
+        "water": 0.0, 
+        "air": 0.0, 
+        "antigrav": 0.0
+      }, 
+      "traction": 0.0, 
       "turbo": 0.0
     }
   ], 

@@ -1,4 +1,4 @@
-Name,Speed,Speed (Water),Speed (Air),Speed (Ground),Acceleration,Weight,Handling,Handling (Water),Handling (Air),Handling(Ground),Traction,Mini Turbo
+Order,Name,Speed,Speed (Water),Speed (Air),Speed (Ground),Acceleration,Weight,Handling,Handling (Water),Handling (Air),Handling(Ground),Traction,Mini Turbo
 0,feather,2.25,2.75,2.25,2.5,3.25,2.25,4.75,4.75,4.5,5,4.5,3
 1,light,2.75,3.25,2.75,3,3,2.75,4.25,4.25,4,4.5,4.25,2.75
 2,cruiser,3.25,3.75,3.25,3.5,2.75,3.25,3.75,3.75,3.5,4,4,2.5
