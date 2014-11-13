@@ -15,6 +15,7 @@ module.exports = function(grunt) {
         dist: {
             files: [
                 { expand: true, src : 'app/data/*.json', dest: 'dist/data/', flatten: true },
+                { expand: true, src : 'app/css/*.png', dest: 'dist/css', flatten: true },
                 { expand: true, src : 'app/js/lib/*.js', dest: 'dist/js/lib/', flatten: true },
                 { expand: true, src : 'app/partials/*.html', dest: 'dist/partials/', flatten: true }
             ]
@@ -24,6 +25,10 @@ module.exports = function(grunt) {
       options: {
         banner: '<%= banner %>',
         stripBanners: true
+      },
+      css: {
+        src: ['app/css/*.css'],
+        dest: 'build/css/combined.css'
       },
       dist: {
         src: ['app/js/*.js'],
@@ -71,8 +76,9 @@ module.exports = function(grunt) {
             banner: '<%= banner %>'
         },
         dist: {
-            src: 'app/css/*.css',
-            dest: 'dist/css/style.min.css'
+            files: {
+                'dist/css/style.min.css': ['build/css/combined.css']
+            }
         }
     },
     processhtml: {
