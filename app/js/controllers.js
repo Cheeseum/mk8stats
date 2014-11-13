@@ -61,6 +61,16 @@ mk8statsApp.controller('KartsCtrl', ['$scope', '$http', function ($scope, $http)
 
         $scope.karts.push(kart);
     };
+
+    $scope.removeKart = function (kart) {
+        idx = $scope.karts.indexOf(kart)
+        if (idx !== -1) {
+            $scope.karts.splice(idx, 1);
+            if ($scope.karts.length === 0) {
+                $scope.addKart();
+            }
+        }
+    };
 }]);
 
 mk8statsApp.controller('KartCtrl', ['$scope', function ($scope) {

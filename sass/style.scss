@@ -10,6 +10,7 @@ $padding: 20px;
 $primary-color: #6495ed;
 $secondary-color: #e4f8ff;
 $fill-color: #f5f5f5;
+$negative-color: #af1127;
 
 $karts-width: 90%;
 
@@ -81,8 +82,11 @@ hr {
 }
 
 #add-kart {
+    min-width: 1em;
     width: 99 - $karts-width; // 99% avoids sub-pixel issues
     vertical-align: top;
+    
+    font-size: $font-size * 5;
 }
 
 // reusable classes
@@ -95,16 +99,18 @@ hr {
     display: inline-block;
     
     color: white;
-
-    min-width: 1em;
+    
+    width: 100%;
     height: 100%;
+    min-height: 1.5em;
+
+    font-size: $font-size * 1.2;
 
     margin: 0;
     padding: 0;
     border: 0;
 
     background: $primary-color;
-    font-size: $font-size * 5;
 }
 
 .big-button:hover {
@@ -113,6 +119,22 @@ hr {
 
 .big-button:active {
     background: darken($primary-color, 20);
+}
+
+.remove-button {
+    @extend .big-button;
+    background: darken($fill-color, 25);
+    
+    border-radius: 1px;
+    box-shadow: 0px 2px 3px #333;
+}
+
+.remove-button:hover {
+    background: $negative-color;
+}
+
+.remove-button:active {
+    background: darken($negative-color, 20);
 }
 
 // custom elements
