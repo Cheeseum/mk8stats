@@ -46,10 +46,18 @@ mk8statsApp.controller('KartsCtrl', ['$scope', '$http', function ($scope, $http)
     $scope.karts = [];
     
     $scope.addKart = function () {
-        kart = {character: $scope.gameData.characters[0], 
-                body: $scope.gameData.bodies[0], 
-                wheels: $scope.gameData.wheels[0],
-                glider: $scope.gameData.gliders[0]};
+        if ($scope.karts.length > 0) {
+            lastKart = $scope.karts[$scope.karts.length - 1];
+            kart = {character: lastKart.character, 
+                    body: lastKart.body, 
+                    wheels: lastKart.wheels,
+                    glider: lastKart.glider};
+        } else {
+            kart = {character: $scope.gameData.characters[0], 
+                    body: $scope.gameData.bodies[0], 
+                    wheels: $scope.gameData.wheels[0],
+                    glider: $scope.gameData.gliders[0]};
+        }
 
         $scope.karts.push(kart);
     };
