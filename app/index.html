@@ -4,13 +4,17 @@
     <title>Mario Kart 8 Kart Builder</title>
     <meta name="description" content="Kart builder and stats calculator for Mario Kart 8. Supports comparing multiple builds.">
     <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-sanitize.min.js"></script>
     <script src="js/lib/angular-animate.min.js"></script>
+    <script src="js/lib/select.min.js"></script>
     <!-- build:js js/mk8stats.min.js -->
         <script type="text/javascript" src="js/controllers.js"></script>
     <!-- /build -->
 
     <!-- build:css css/style.min.css -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/select.css">
+        <link rel="stylesheet" type="text/css" href="css/select2.css">
     <!-- /build -->
 </head>
 
@@ -22,18 +26,30 @@
             <div id="karts">
             <div ng-repeat="kart in karts" class="kart" id="kart-{{kart.id}}" ng-controller="KartCtrl">
                 <div class="kart-options">
-                    <select ng-model="kart.character"
-                            ng-options="d.name group by d.weight|uppercase for d in gameData.characters | orderBy:'gameData.weights[d.weight].order'" >
-                    </select>
-                    <select ng-model="kart.body" name="karts"
-                            ng-options="d.name group by d.type|uppercase for d in gameData.bodies | orderBy:'d.name'">
-                    </select>
-                    <select ng-model="kart.wheels" name="wheels"
-                            ng-options="d.name group by d.type|uppercase for d in gameData.wheels | orderBy:'d.name'">
-                    </select>
-                    <select ng-model="kart.glider" name="gliders"
-                            ng-options="d.name group by d.type|uppercase for d in gameData.gliders | orderBy:'d.name'">
-                    </select>
+                    <ui-select ng-model="kart.character" ng-disabled="disabled" theme="select2" style="min-width: 100%">
+                        <ui-select-match placeholder="Character">{{$select.selected.name}}</ui-select-match>
+                        <ui-select-choices group-by="'weight'" repeat="char in gameData.characters | filter: {name: $select.search} | orderBy:'gameData.weights[char.weight].order'">
+                            <div ng-bind-html="char.name"></div>
+                        </ui-select-choices>
+                    </ui-select>
+                    <ui-select ng-model="kart.body" ng-disabled="disabled" theme="select2" style="min-width: 100%">
+                        <ui-select-match placeholder="Kart">{{$select.selected.name}}</ui-select-match>
+                        <ui-select-choices group-by="'type'" repeat="body in gameData.bodies | filter: {name: $select.search} | orderBy:'body.name'">
+                            <div ng-bind-html="body.name"></div>
+                        </ui-select-choices>
+                    </ui-select>
+                    <ui-select ng-model="kart.wheels" ng-disabled="disabled" theme="select2" style="min-width: 100%">
+                        <ui-select-match placeholder="Wheels">{{$select.selected.name}}</ui-select-match>
+                        <ui-select-choices group-by="'type'" repeat="wheel in gameData.wheels | filter: {name: $select.search} | orderBy:'wheel.name'">
+                            <div ng-bind-html="wheel.name"></div>
+                        </ui-select-choices>
+                    </ui-select>
+                    <ui-select ng-model="kart.glider" ng-disabled="disabled" theme="select2" style="min-width: 100%">
+                        <ui-select-match placeholder="Glider">{{$select.selected.name}}</ui-select-match>
+                        <ui-select-choices group-by="'type'" repeat="glider in gameData.gliders | filter: {name: $select.search} | orderBy:'glider.name'">
+                            <div ng-bind-html="glider.name"></div>
+                        </ui-select-choices>
+                    </ui-select>
                 </div>
 
                 <div class="kart-stats">

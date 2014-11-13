@@ -1,4 +1,4 @@
-var mk8statsApp = angular.module('mk8statsApp', []);
+var mk8statsApp = angular.module('mk8statsApp', ['ngSanitize', 'ui.select']);
 var statKeys = ['accel', 'weight', 'traction', 'turbo'];
 
 // returns the sum of the given stat objects
